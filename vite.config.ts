@@ -217,6 +217,7 @@ export default defineConfig(({ mode }) => {
       componentTagger(),
       cdnPrefixImages(),
     ].filter(Boolean),
+    base: 'pump-selection-app/'
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
