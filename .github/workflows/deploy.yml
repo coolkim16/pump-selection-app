@@ -27,6 +27,11 @@ jobs:
       - name: Build
         run: npm run build
       
+      - name: List build files (디버깅)
+        run: |
+          ls -la dist/
+          cat dist/index.html
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
