@@ -135,7 +135,20 @@ const Index = () => {
               </div>
             </CardContent>
           </Card>
-
+            {/* YouTube 영상 추가 */}
+                <div className="mt-6">
+                  <h3 className="text-sm font-medium text-gray-700 mb-3">제품 소개 영상</h3>
+                  <div className="relative w-full rounded-lg overflow-hidden shadow-sm" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src="https://www.youtube.com/embed/ZFKNHbv7xTk"
+                      title="PDS 다이어프램 정량펌프 소개"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
           {/* 결과 섹션 */}
           <div className="space-y-6">
             {recommendedModels.length > 0 && (
